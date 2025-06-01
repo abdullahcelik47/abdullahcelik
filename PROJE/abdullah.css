@@ -1,0 +1,339 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+}
+.animate-fadein {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+#beni-taniyin-btn {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#beni-taniyin-btn:hover {
+  transform: scale(1.07) translateY(-2px);
+  box-shadow: 0 8px 32px rgba(99,102,241,0.18);
+}
+.about-fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(.25,.8,.25,1), transform 0.8s cubic-bezier(.25,.8,.25,1);
+}
+.about-fadein.visible {
+  opacity: 1;
+  transform: none;
+}
+.project-card {
+  border-radius: 1.5rem;
+  transition: transform 0.25s cubic-bezier(.25,.8,.25,1), box-shadow 0.25s;
+  box-shadow: 0 4px 24px rgba(99,102,241,0.07);
+  background: #fff;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(99,102,241,0.13), 0 2px 12px rgba(0,0,0,0.09);
+}
+.project-card .card-title {
+  color: #6366f1;
+}
+.hero-photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 32px rgba(99,102,241,0.13);
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+}
+.hero-photo:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 16px 48px rgba(99,102,241,0.18);
+}
+@media (max-width: 767px) {
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+  }
+}
+.hero-section {
+  min-height: 60vh;
+  position: relative;
+  background: linear-gradient(120deg, #6366f1 60%, #a5b4fc 100%);
+  overflow: hidden;
+}
+.hero-section .display-3 {
+  letter-spacing: -1px;
+}
+.hero-section img {
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+}
+.hero-section img:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(99,102,241,0.18);
+}
+.animate-fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.project-card {
+  border-radius: 1.5rem;
+  transition: transform 0.25s cubic-bezier(.25,.8,.25,1), box-shadow 0.25s;
+  box-shadow: 0 4px 24px rgba(99,102,241,0.07);
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.project-card:hover {
+  transform: translateY(-10px) scale(1.04) rotate(-1deg);
+  box-shadow: 0 16px 40px rgba(99,102,241,0.18), 0 2px 12px rgba(0,0,0,0.10);
+  border: 2px solid #6366f1;
+}
+.project-card-img-wrapper {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.project-card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
+}
+.project-card:hover .project-card-img-wrapper img {
+  transform: scale(1.08) rotate(-2deg);
+}
+.btn-gradient {
+  background: linear-gradient(90deg, #6366f1 60%, #a5b4fc 100%);
+  color: #fff;
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+}
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #4f46e5 60%, #818cf8 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(99,102,241,0.18);
+}
+.card-title i {
+  color: #6366f1;
+}
+.card.shadow-lg:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 8px rgba(0,0,0,0.12);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.modern-contact-card {
+  max-width: 420px;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15), 0 1.5px 8px rgba(0,0,0,0.10);
+  padding: 2.5rem 1.5rem;
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+}
+.modern-contact-card:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18), 0 2px 12px rgba(0,0,0,0.13);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 2rem;
+  color: #6366f1;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  border: none;
+  text-decoration: none;
+}
+.contact-icon:hover {
+  background: #6366f1;
+  color: #fff;
+  transform: scale(1.15) rotate(-8deg);
+  box-shadow: 0 4px 16px rgba(99,102,241,0.18);
+}
+.contact-icon .fa-envelope { color: #ef4444; }
+.contact-icon .fa-linkedin { color: #0a66c2; }
+.contact-icon .fa-github { color: #181717; }
+.contact-icon .fa-instagram { color: #C13584; }
+.contact-icon .fa-twitter { color: #1DA1F2; }
+.contact-icon:hover .fa-envelope,
+.contact-icon:hover .fa-linkedin,
+.contact-icon:hover .fa-github,
+.contact-icon:hover .fa-instagram,
+.contact-icon:hover .fa-twitter {
+  color: #fff;
+}
+.about-modern-card {
+  background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(99,102,241,0.10), 0 1.5px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.about-modern-card:hover {
+  box-shadow: 0 16px 48px rgba(99,102,241,0.18), 0 2px 12px rgba(0,0,0,0.13);
+  transform: scale(1.02) translateY(-4px);
+}
+.about-icon {
+  margin-bottom: 1rem;
+}
+.about-underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1 60%, #a5b4fc 100%);
+  border-radius: 2px;
+}
+.about-fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(.25,.8,.25,1), transform 0.8s cubic-bezier(.25,.8,.25,1);
+}
+.about-fadein.visible {
+  opacity: 1;
+  transform: none;
+}
+/* Açık arka planlı modern iletişim kartı */
+.custom-contact-card {
+  background: #f8fafc;
+  color: #222;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  border: none;
+  opacity: 0;
+  transform: scale(0.95) translateY(40px);
+  animation: contactFadeIn 1s cubic-bezier(.25,.8,.25,1) 0.3s forwards;
+}
+
+.contact-icon-lg {
+  font-size: 2.2rem;
+  color: #FFD600;
+  vertical-align: middle;
+}
+.contact-info-text {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  color: #222;
+}
+.contact-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 2.2rem;
+  color: #FFD600;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+.contact-social-icon:hover {
+  background: #FFD600;
+  color: #f8fafc;
+  transform: scale(1.15) rotate(-8deg);
+}
+/* Navbar animasyonlu giriş */
+.navbar {
+  animation: navbarFadeIn 1s cubic-bezier(.25,.8,.25,1);
+}
+@keyframes navbarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Navbar link hover ve aktif efekti */
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.2s !important;
+}
+.navbar .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1 60%, #a5b4fc 100%);
+  border-radius: 2px;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #6366f1 !important;
+  font-weight: 600;
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+/* Her ana bölüm tam ekranı kaplasın ve içerik ortalansın */
+section,
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section > .container,
+.contact-section > .contact-center-frame,
+#about > .container,
+#projects > .container,
+#contact > .contact-center-frame {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+section .row,
+#about .row,
+#projects .row {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#projects,
+#contact {
+  min-height: 130vh;
+}
